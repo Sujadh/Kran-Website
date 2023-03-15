@@ -9,10 +9,10 @@ function Header() {
     <div className="header">
       <Row>
         <Col md={0} xl={2}></Col>
-        <Col xs={12} md={4} xl={4} className="logoContainer">
+        <Col xs={12} md={4} xl={4} style={{textAlign:"start"}}>
           <img src={kran} alt="kranLogo"/>
         </Col>
-        <Col xs={12} md={4} xl={4} className="navbar">
+        <Col xs={12} md={4} xl={4} style={{textAlign:"end"}}>
           <Navbar />
         </Col>
         <Col md={0} xl={2}></Col>

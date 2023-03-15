@@ -1,0 +1,16 @@
+.topnavbar{
+    color: grey;
+}
+
+.navLink{
+    text-decoration: none;
+    color: black;
+}
+
+.navLink:hover{
+    color: #c80808;
+}
+
+.active{
+    color: #c80808;
+}
