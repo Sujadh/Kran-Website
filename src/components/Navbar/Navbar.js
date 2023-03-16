@@ -10,21 +10,21 @@ function Navbar() {
         <Col>News </Col>|<Col>CSR</Col> |<Col>Blog</Col> |<Col>Careers</Col> |
         <Col>Gallery </Col>
       </Row>
-      <Row>
+      <Row className="bottomnavbar">
         <Col>
-          <NavLink to="/" className="navLink">Home</NavLink>
+          <NavLink to="/" className="navLink">HOME</NavLink>
         </Col>
         <Col>
-          <NavLink to="/services" className="navLink">Services</NavLink>
+          <NavLink to="/services" className="navLink">SERVICES</NavLink>
         </Col>
         <Col>
-          <NavLink to="/solutions" className="navLink">Solutions</NavLink>
+          <NavLink to="/solutions" className="navLink">SOLUTIONS</NavLink>
         </Col>
         <Col>
-          <NavLink to="/about" className="navLink">About</NavLink>
+          <NavLink to="/about" className="navLink">ABOUT</NavLink>
         </Col>
         <Col>
-          <NavLink to="/contactus" className="navLink">Contact Us</NavLink>
+          <NavLink to="/contactus" className="navLink">CONTACT US</NavLink>
         </Col>
       </Row>
     </div>

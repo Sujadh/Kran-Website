@@ -1,0 +1,54 @@
+.readmore {
+    color: #c80808;
+    cursor: pointer;
+    font-size: small;
+    text-align: left;
+    padding-left: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+.miniDiscription{
+    font-size: small;
+    text-align: justify;
+    padding: 20px;
+    padding-top: 10px;
+}
+
+.service {
+    margin-top: 5%;
+}
+
+.serviceheading {
+    color: #c80808;
+}
+
+.discription{
+    text-align: justify;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 100%;
+    min-height: 490px;
+    margin-bottom: 20px;
+}
+
+.card:hover{
+    box-shadow: 0 16px 24px 0 rgba(0,0,0,0.2);
+}
+
+.imageconatiner{
+    width: 100%;
+    height: 400px,
+}
+
+.serviceimage{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.servicehead{
+    text-transform: uppercase;
+}
