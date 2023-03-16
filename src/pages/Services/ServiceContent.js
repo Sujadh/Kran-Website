@@ -1,0 +1,50 @@
+export const SERVICECONTENTS = [
+        {
+                id: "",
+                heading: "",
+                image: "",
+                icon: "",
+                discription: "",
+                miniDiscription: "",
+        },
+        {
+                id: "",
+                heading: "",
+                image: "",
+                icon: "",
+                discription: "",
+                miniDiscription: "",
+        },
+        {
+                id: "",
+                heading: "",
+                image: "",
+                icon: "",
+                discription: "",
+                miniDiscription: "",
+        },
+        {
+                id: "",
+                heading: "",
+                image: "",
+                icon: "",
+                discription: "",
+                miniDiscription: "",
+        },
+        {
+                id: "",
+                heading: "",
+                image: "",
+                icon: "",
+                discription: "",
+                miniDiscription: "",
+        },
+        {
+                id: "",
+                heading: "",
+                image: "",
+                icon: "",
+                discription: "",
+                miniDiscription: "",
+        }
+];
