@@ -1,10 +1,16 @@
 .homepage {
-    margin: 300px;
-    margin-top: 5%;
+    margin: 300px; 
+    margin-top: 10px;  
+}
+
+.home{
+    margin-top: 4%;
+    font-family: 'Poppins', sans-serif;
 }
 
 .head {
     color: #c80808;
+    margin-bottom: 40px;
 }
 
 .flagship {
@@ -13,10 +19,14 @@
 
 .coe {
     margin-top: 50px;
+    height: 600px;
+    margin-bottom: 50px;
 }
 
 .aboutus {
     margin-top: 50px;
+    height: 600px;
+    margin-bottom: 50px;
 }
 
 .services {
@@ -25,4 +35,17 @@
 
 .para {
     text-align: center;
+}
+
+.coeImage{
+    width: 75%;
+    height: 100%;
+}
+
+.coe-content{
+    margin-top: 20px;
+}
+
+.certifiImage{
+    width: 100%;
 }

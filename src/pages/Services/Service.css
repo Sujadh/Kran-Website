@@ -50,5 +50,22 @@
 }
 
 .servicehead{
-    text-transform: uppercase;
+    text-transform: uppercase;    
+    color: white;
+}
+
+.icon{
+   height: 50px;
+   width: 50px;
+}
+
+.headandicon{
+    position: absolute;
+    bottom: 32%;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.822);
+    width: 100%;
+    padding-top: 10px;
+    text-align: left;
+    padding-left: 10px;
 }
