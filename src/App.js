@@ -10,7 +10,7 @@ function App() {
       <Header />
       <div className="content">
         <Routes>
-          <Route path="/" exact element={<HomePage />} />
+          <Route path="/" exact element={<HomePage />} />          
           <Route path="/services/:id" element={<Service/>} />
         </Routes>
       </div>

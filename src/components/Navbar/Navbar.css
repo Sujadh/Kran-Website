@@ -19,3 +19,16 @@
 .bottomnavbar{
     padding-top: 10px;
 }
+
+.link{
+    text-decoration: none;    
+    color: grey;
+}
+
+.link:hover{
+    color: black;
+}
+
+.topnav{
+    padding: 0;
+}
