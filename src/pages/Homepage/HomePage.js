@@ -18,6 +18,12 @@ const certifications = [
   { image: iso27001logo, alt: "iso27001logo" },
 ];
 
+const flagshipContent = [
+  { link: (<iframe src="https://www.youtube.com/embed/_xZIaWY0sGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>) },
+  { link: (<iframe src="https://www.youtube.com/embed/61vBfSVcjBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>) },
+  { link: (<iframe src="https://www.youtube.com/embed/wjwk8uG6-EE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>) }
+];
+
 function HomePage() {
   return (
     <div className="home">
@@ -25,11 +31,27 @@ function HomePage() {
       <div className="homepage">
         <section className="flagship">
           <h2 className="head">Flagship Offerings</h2>
+          <Row>
+            {
+              flagshipContent.map((flagship) => (
+                <Col xs={12} md={4} xl={4}>
+                  <div className="youtubeContent">
+                    <div className="youtubeLinks">
+                      {flagship.link}
+                    </div>
+                    <h5><b>KRAN Profile</b></h5>
+                    <p>
+                      25 years of experience working on Transformational Projects in the Government Sector</p>
+                  </div>
+                </Col>
+              ))
+            }
+          </Row>
         </section>
         <section className="coe">
           <h2 className="head">Centres Of Excellence</h2>
           <Row className="coe-content">
-            <Col xs={12} md={6} xl={6} style={{ textAlign: "center" }}>
+            <Col xs={12} md={6} xl={6} style={{ textAlign: "center", height: "600px" }}>
               <img src={corImage} alt="corImage" className="coeImage" />
             </Col>
             <Col xs={12} md={6} xl={6} style={{ textAlign: "justify" }}>
@@ -105,7 +127,7 @@ function HomePage() {
               <Row>
                 {certifications.map((certifiImage) => (
                   <Col xs={12} md={3} xl={3}>
-                    <img src={certifiImage.image} alt={certifiImage.alt} className="certifiImage"/>
+                    <img src={certifiImage.image} alt={certifiImage.alt} className="certifiImage" />
                   </Col>
                 ))}
               </Row>
