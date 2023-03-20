@@ -1,0 +1,19 @@
+.footer{
+    background-color: #171616;    
+}
+
+.top-footer{
+    height: 200px;
+    margin: 300px;
+    margin-top: 0;
+    margin-bottom: 0;  
+    padding-top: 10px;
+    font-size: small;
+    font-weight: lighter;
+}
+
+.bottom-footer{
+    height: 100px;
+    background-color: #202322;
+}
+

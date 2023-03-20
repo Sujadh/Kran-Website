@@ -12,14 +12,14 @@ import slide7 from "../../asset/slide7.jpg";
 import slide8 from "../../asset/slide8.jpg";
 
 const sliders = [
+  { slideimage: slide8 , alt : "slide8"},
   { slideimage: slide1 , alt : "slide1"},
   { slideimage: slide2 , alt : "slide2"},
   { slideimage: slide3 , alt : "slide3"},
   { slideimage: slide4 , alt : "slide4"},
   { slideimage: slide5 , alt : "slide5"},
   { slideimage: slide6 , alt : "slide6"},
-  { slideimage: slide7 , alt : "slide7"},
-  { slideimage: slide8 , alt : "slide8"},
+  { slideimage: slide7 , alt : "slide7"}
 ];
 
 function Slider() {

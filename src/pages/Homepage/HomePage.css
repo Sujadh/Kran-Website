@@ -1,9 +1,9 @@
 .homepage {
-    margin: 300px; 
-    margin-top: 10px;  
+    margin: 300px;
+    margin-top: 10px;
 }
 
-.home{
+.home {
     margin-top: 4%;
     font-family: 'Poppins', sans-serif;
 }
@@ -15,6 +15,7 @@
 
 .flagship {
     margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 .coe {
@@ -25,8 +26,8 @@
 
 .aboutus {
     margin-top: 50px;
-    height: 600px;   
-    margin-bottom: 100px; 
+    height: 600px;
+    margin-bottom: 100px;
 }
 
 .services {
@@ -37,25 +38,26 @@
     text-align: center;
 }
 
-.coeImage{
-    width: 100%;
+.coeImage {
+    width: 90%;
     height: 100%;
 }
 
-.coe-content{
+.coe-content {
     margin-top: 20px;
 }
 
-.certifiImage{
+.certifiImage {
     width: 100%;
 }
 
-.youtubeContent{
-width: 100%;
-border: 1px solid rgb(223, 222, 222);
+.youtubeContent {
+    width: 100%;
+    border: 1px solid rgb(223, 222, 222);
+    min-height: 100%;
 }
 
-.youtubeLinks{
+.youtubeLinks {
     width: 100%;
     border: 1px solid black;
 }

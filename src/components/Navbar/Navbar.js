@@ -33,7 +33,7 @@ function Navbar() {
           <NavLink to="/" className="navLink">HOME</NavLink>
         </Col>
         <Col>
-          <NavLink to="/services/con" className="navLink">SERVICES</NavLink>
+          <NavLink to="/services" className="navLink">SERVICES</NavLink>
         </Col>
         <Col>
           <NavLink to="/solutions" className="navLink">SOLUTIONS</NavLink>

@@ -10,6 +10,7 @@ import cmmilogo from "../../asset/cmmi logo.png";
 import iso9001logo from "../../asset/iso 9001 logo.png";
 import iso20100logo from "../../asset/iso 20100 logo.png";
 import iso27001logo from "../../asset/iso 27001 logo.png";
+import Footer from "../../components/Footer/Footer";
 
 const certifications = [
   { image: cmmilogo, alt: "cmmilogo" },
@@ -19,9 +20,53 @@ const certifications = [
 ];
 
 const flagshipContent = [
-  { link: (<iframe src="https://www.youtube.com/embed/_xZIaWY0sGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>) },
-  { link: (<iframe src="https://www.youtube.com/embed/61vBfSVcjBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>) },
-  { link: (<iframe src="https://www.youtube.com/embed/wjwk8uG6-EE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>) }
+  {
+    link: (
+      <iframe
+        src="https://www.youtube.com/embed/_xZIaWY0sGA"
+        width="100%"
+        height="100%"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    ),
+    heading: "KRAN Profile",
+    discription:
+      "25 years of experience working on Transformational Projects in the Government Sector",
+  },
+  {
+    link: (
+      <iframe
+        src="https://www.youtube.com/embed/61vBfSVcjBc"
+        width="100%"
+        height="100%"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    ),
+    heading: "e-Budget",
+    discription:
+      "Journey from a manual budget to India's first completely Digital Budget available on Google PlayStore",
+  },
+  {
+    link: (
+      <iframe
+        src="https://www.youtube.com/embed/wjwk8uG6-EE"
+        width="100%"
+        height="100%"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    ),
+    heading: "KRAN Galaxy",
+    discription: "An Integrated Application LifeCycle Management System",
+  },
 ];
 
 function HomePage() {
@@ -32,26 +77,30 @@ function HomePage() {
         <section className="flagship">
           <h2 className="head">Flagship Offerings</h2>
           <Row>
-            {
-              flagshipContent.map((flagship) => (
-                <Col xs={12} md={4} xl={4}>
-                  <div className="youtubeContent">
-                    <div className="youtubeLinks">
-                      {flagship.link}
-                    </div>
-                    <h5><b>KRAN Profile</b></h5>
-                    <p>
-                      25 years of experience working on Transformational Projects in the Government Sector</p>
-                  </div>
-                </Col>
-              ))
-            }
+            {flagshipContent.map((flagship) => (
+              <Col xs={12} md={4} xl={4}>
+                <div className="youtubeContent">
+                  <div className="youtubeLinks">{flagship.link}</div>
+                  <p style={{color:"#c80808"}}>
+                    <b>{flagship.heading}</b>
+                  </p>
+                  <p style={{fontSize:"small"}}>
+                    {flagship.discription}
+                  </p>
+                </div>
+              </Col>
+            ))}
           </Row>
         </section>
         <section className="coe">
           <h2 className="head">Centres Of Excellence</h2>
           <Row className="coe-content">
-            <Col xs={12} md={6} xl={6} style={{ textAlign: "center", height: "600px" }}>
+            <Col
+              xs={12}
+              md={6}
+              xl={6}
+              style={{ textAlign: "center"}}
+            >
               <img src={corImage} alt="corImage" className="coeImage" />
             </Col>
             <Col xs={12} md={6} xl={6} style={{ textAlign: "justify" }}>
@@ -127,7 +176,11 @@ function HomePage() {
               <Row>
                 {certifications.map((certifiImage) => (
                   <Col xs={12} md={3} xl={3}>
-                    <img src={certifiImage.image} alt={certifiImage.alt} className="certifiImage" />
+                    <img
+                      src={certifiImage.image}
+                      alt={certifiImage.alt}
+                      className="certifiImage"
+                    />
                   </Col>
                 ))}
               </Row>
@@ -152,6 +205,7 @@ function HomePage() {
           </Row>
         </section>
       </div>
+      <Footer />
     </div>
   );
 }
